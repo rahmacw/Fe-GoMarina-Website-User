@@ -1,15 +1,12 @@
 // src/components/headeri/Header.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import LogoImage from "../../assets/images/logo/Logo.jpg"; // Gunakan import
 
 const Header = () => (
   <header>
     <div className="logo">
-      <img
-        src="src/assets/images/logo/Logo.jpg"
-        alt="Logo"
-        className="logo-image"
-      />
+      <img src={LogoImage} alt="Logo" className="logo-image" />
       <h1 className="logo-h1">Go Marina</h1>
     </div>
     <nav>
