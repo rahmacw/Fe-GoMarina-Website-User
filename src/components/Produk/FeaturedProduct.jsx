@@ -1,4 +1,5 @@
 import React from 'react';
+import beliSekarangImage from '../../assets/images/beranda/beli-sekarang/beli-sekarang01.jpg';
 
 const FeaturedProduct = () => {
   return (
@@ -10,7 +11,11 @@ const FeaturedProduct = () => {
         <button className="unggulan-button">Beli Sekarang</button>
       </div>
       <div className="unggulan-right">
-        <img src="src/assets/images/beranda/beli-sekarang/beli-sekarang01.jpg" alt="Foto kebun" className="unggulan-photo" />
+        <img
+          src={beliSekarangImage}
+          alt="Foto kebun"
+          className="unggulan-photo"
+        />
       </div>
     </div>
   );
