@@ -1,4 +1,5 @@
 import React from "react";
+import beliSekarangImage from "../../assets/images/beranda/beli-sekarang/beli-sekarang01.jpg";
 
 const VisitSection = () => (
   <div className="visit-container">
@@ -8,7 +9,7 @@ const VisitSection = () => (
     </div>
     <div className="visit-right">
       <img
-        src="src/assets/images/beranda/beli-sekarang/beli-sekarang01.jpg"
+        src={beliSekarangImage}
         alt="Foto kebun"
         className="visit-photo"
       />
