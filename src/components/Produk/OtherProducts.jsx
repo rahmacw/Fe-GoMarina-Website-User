@@ -1,5 +1,11 @@
 import React from 'react';
 
+// Import gambar
+import jusJambuImage from '../../assets/images/produk/jusjambu01.jpg';
+import selaiJambuImage from '../../assets/images/produk/selaijambu01.jpg';
+import hampersImage from '../../assets/images/produk/hampers02.jpg';
+import keripikJambuImage from '../../assets/images/produk/kripikjambu01.webp';
+
 const OtherProducts = () => {
   return (
     <div className="more-product">
@@ -8,7 +14,7 @@ const OtherProducts = () => {
         {/* Product 1 */}
         <div className="product-box">
           <div>
-            <img src="src/assets/images/produk/jusjambu01.jpg" alt="Produk 1" className="product-image" />
+            <img src={jusJambuImage} alt="Produk 1" className="product-image" />
             <i className="icon-love fas fa-heart" />
           </div>
           <h4>Jus Jambu Merah</h4>
@@ -19,7 +25,7 @@ const OtherProducts = () => {
         {/* Product 2 */}
         <div className="product-box">
           <div>
-            <img src="src/assets/images/produk/selaijambu01.jpg" alt="Produk 2" className="product-image" />
+            <img src={selaiJambuImage} alt="Produk 2" className="product-image" />
             <i className="icon-love fas fa-heart" />
           </div>
           <h4>Selai Jambu Merah</h4>
@@ -30,7 +36,7 @@ const OtherProducts = () => {
         {/* Product 3 */}
         <div className="product-box">
           <div>
-            <img src="src/assets/images/produk/hampers02.jpg" alt="Produk 3" className="product-image" />
+            <img src={hampersImage} alt="Produk 3" className="product-image" />
             <i className="icon-love fas fa-heart" />
           </div>
           <h4>Paket Hampers Jambu</h4>
@@ -41,7 +47,7 @@ const OtherProducts = () => {
         {/* Product 4 */}
         <div className="product-box">
           <div>
-            <img src="src/assets/images/produk/kripikjambu01.webp" alt="Produk 4" className="product-image" />
+            <img src={keripikJambuImage} alt="Produk 4" className="product-image" />
             <i className="icon-love fas fa-heart" />
           </div>
           <h4>Keripik Jambu Merah</h4>
