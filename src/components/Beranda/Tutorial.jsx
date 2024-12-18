@@ -1,10 +1,10 @@
 import React from "react";
-import image01 from "./assets/images/beranda/tutor/image01.png";
-import image02 from "./assets/images/beranda/tutor/image02.png";
-import image03 from "./assets/images/beranda/tutor/image03.png";
-import image04 from "./assets/images/beranda/tutor/image04.png";
-import barcode01 from "./assets/images/beranda/cara-memesan/barcode01.png";
-import phone01 from "./assets/images/beranda/cara-memesan/phone01.png";
+import image01 from "../../assets/images/beranda/tutor/image01.png";
+import image02 from "../../assets/images/beranda/tutor/image02.png";
+import image03 from "../../assets/images/beranda/tutor/image03.png";
+import image04 from "../../assets/images/beranda/tutor/image04.png";
+import barcode01 from "../../assets/images/beranda/cara-memesan/barcode01.png";
+import phone01 from "../../assets/images/beranda/cara-memesan/phone01.png";
 
 const Tutorial = () => {
   const copyText = () => {
