@@ -1,11 +1,11 @@
 import React from 'react';
-
+import keindahanKebun3 from '../../assets/images/beranda/keindahan-kebun/keindahan-kebun3.jpeg'; // Import gambar
 
 const Landing = () => (
   <section className="landing">
     <div className="garden-beauty">
       <img
-        src="src/assets/images/beranda/keindahan-kebun/keindahan-kebun3.jpeg"
+        src={keindahanKebun3} // Menggunakan gambar yang diimport
         alt="Keindahan Kebun"
         className="garden-image"
       />
