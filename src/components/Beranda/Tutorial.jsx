@@ -1,4 +1,10 @@
 import React from "react";
+import image01 from "./assets/images/beranda/tutor/image01.png";
+import image02 from "./assets/images/beranda/tutor/image02.png";
+import image03 from "./assets/images/beranda/tutor/image03.png";
+import image04 from "./assets/images/beranda/tutor/image04.png";
+import barcode01 from "./assets/images/beranda/cara-memesan/barcode01.png";
+import phone01 from "./assets/images/beranda/cara-memesan/phone01.png";
 
 const Tutorial = () => {
   const copyText = () => {
@@ -18,25 +24,16 @@ const Tutorial = () => {
       <div className="background-circle" />
       <div className="tutorial">
         <h2>Cara Memesan</h2>
-        {/* <p>Pelajari cara memesan produk menggunakan aplikasi mobile!</p> */}
         <div className="steps">
           <div className="step">
-            <img
-              src="src/assets/images/beranda/tutor/image01.png"
-              alt="Step 1"
-              className="step-image"
-            />
+            <img src={image01} alt="Step 1" className="step-image" />
             <p style={{ fontWeight: "bold" }}>Step 1</p>
             <p style={{ textAlign: "justify" }}>
               Download Aplikasi Go Marina , kemudian Login/Register.
             </p>
           </div>
           <div className="step">
-            <img
-              src="src/assets/images/beranda/tutor/image02.png"
-              alt="Step 2"
-              className="step-image"
-            />
+            <img src={image02} alt="Step 2" className="step-image" />
             <p style={{ fontWeight: "bold" }}>Step 2</p>
             <p style={{ textAlign: "justify" }}>
               Setelah login, pada halaman beranda klik menu Produk. Lalu pilih
@@ -44,11 +41,7 @@ const Tutorial = () => {
             </p>
           </div>
           <div className="step">
-            <img
-              src="src/assets/images/beranda/tutor/image03.png"
-              alt="Step 3"
-              className="step-image"
-            />
+            <img src={image03} alt="Step 3" className="step-image" />
             <p style={{ fontWeight: "bold" }}>Step 3</p>
             <p style={{ textAlign: "justify" }}>
               Untuk memesan, klik salah satu produk. Selanjutnya, lengkapi
@@ -56,11 +49,7 @@ const Tutorial = () => {
             </p>
           </div>
           <div className="step">
-            <img
-              src="src/assets/images/beranda/tutor/image04.png"
-              alt="Step 4"
-              className="step-image"
-            />
+            <img src={image04} alt="Step 4" className="step-image" />
             <p style={{ fontWeight: "bold" }}>Step 4</p>
             <p style={{ textAlign: "justify" }}>
               Selamat! Anda telah berhasil memesan di Go Marina. Untuk melihat
@@ -69,17 +58,9 @@ const Tutorial = () => {
           </div>
         </div>
         <div className="barcode-section">
-          <img
-            src="src/assets/images/beranda/cara-memesan/barcode01.png"
-            alt="Barcode"
-            className="barcode"
-          />
+          <img src={barcode01} alt="Barcode" className="barcode" />
           <div className="phone">
-            <img
-              src="src/assets/images/beranda/cara-memesan/phone01.png"
-              alt="Handphone"
-              className="phone-image"
-            />
+            <img src={phone01} alt="Handphone" className="phone-image" />
             <div className="info">
               <h3>
                 Go Marina
