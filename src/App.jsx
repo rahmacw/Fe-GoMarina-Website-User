@@ -13,9 +13,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import Pesanan from "./pages/admin/Pesanan";
 import Produk from "./pages/admin/Produk";
 import KelolaKonten from "./pages/admin/KelolaKonten";
-// import TambahKonten from "./pages/admin/TambahKonten";
 import KelolaPembayaran from "./pages/admin/KelolaPembayaran";
-// import DetailPembayaran from "./pages/admin/DetailPembayaran";
 import LaporanPenjualan from "./pages/admin/LaporanPenjualan";
 
 // Komponen Header dan Sidebar
@@ -105,18 +103,6 @@ const App = () => {
             )
           }
         />
-        {/* <Route
-          path="tambahkonten"
-          element={
-            isAuthenticated ? (
-              <AdminLayout>
-                <TambahKonten />
-              </AdminLayout>
-            ) : (
-              <Navigate to="/sign-in" replace />
-            )
-          }
-        /> */}
         <Route
           path="kelolapembayaran"
           element={
@@ -129,18 +115,6 @@ const App = () => {
             )
           }
         />
-        {/* <Route
-          path="detailpembayaran"
-          element={
-            isAuthenticated ? (
-              <AdminLayout>
-                <DetailPembayaran />
-              </AdminLayout>
-            ) : (
-              <Navigate to="/sign-in" replace />
-            )
-          }
-        /> */}
         <Route
           path="laporanpenjualan"
           element={
