@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/sign-in.css"; // Assuming CSS is in the same directory
 import logoImage from "../assets/images/logo/Logo.jpg"; // Import the image
 
-function SignIn() {
-  // State for password visibility toggle
+
+function SignIn({ setIsAuthenticated }) {
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const [error, setError] = useState(""); // State for error message
+  const navigate = useNavigate(); // For navigation to Dashboard.jsx
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -13,12 +15,18 @@ function SignIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     const login = e.target.login.value;
     const password = e.target.password.value;
-    console.log("Username/Email/Phone: ", login);
-    console.log("Password: ", password);
-    // Add your API call here or handle state updates
+
+    // Validation for admin credentials
+    if (login === "admin" && password === "admin") {
+      setError(""); // Clear error message
+      setIsAuthenticated(true); // Update authentication status
+      localStorage.setItem("isAuthenticated", "true"); // Store login status
+      navigate("/dashboard"); // Navigate to Dashboard
+    } else {
+      setError("Username atau password salah!"); // Set error message
+    }
   };
 
   return (
@@ -45,12 +53,12 @@ function SignIn() {
         <div className="form-section-signin">
           <h2>Sign In</h2>
           <form onSubmit={handleSubmit}>
-            <label>Username/Email/Telepon</label>
+            <label>Username</label>
             <input
               type="text"
               name="login"
               required
-              placeholder="Masukkan username / email / telepon"
+              placeholder="Masukkan username"
             />
 
             <label>Password</label>
@@ -69,6 +77,9 @@ function SignIn() {
                 onClick={togglePasswordVisibility}
               ></i>
             </div>
+
+            {/* Display error message */}
+            {error && <p className="error-message">{error}</p>}
 
             <button className="button-signin" type="submit">Sign In</button>
           </form>
