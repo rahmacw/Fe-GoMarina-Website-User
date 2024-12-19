@@ -13,12 +13,12 @@ import Hampers01 from "../assets/images/produk/hampers01.jpg";
 import Kuda00 from "../assets/images/galeri/kuda02.jpg";
 import Spot98 from "../assets/images/galeri/spot07.jpeg";
 import Spot00 from "../assets/images/galeri/spot01.jpg";
-// import kuda99 from "../assets/images/galeri/kuda04.jpg";
+import Kuda99 from "../assets/images/galeri/kuda05.jpg";
 import Spot99 from "../assets/images/galeri/spot02.webp";
 
 // // Anda dapat menambahkan lebih banyak gambar dengan cara yang sama
 import Jambu01 from "../assets/images/galeri/jambu01.jpeg";
-// import Jambu02 from "../assets/images/galeri/jambu02.jpg";
+import Jambu02 from "../assets/images/galeri/jambu25.jpg";
 import Jambu03 from "../assets/images/galeri/jambu03.jpg";
 import Jambu04 from "../assets/images/galeri/jambu04.webp";
 import Jambu05 from "../assets/images/galeri/jambu05.jpeg";
@@ -55,7 +55,7 @@ import Jambu30 from "../assets/images/galeri/jambu30.jpg";
 import Kuda01 from "../assets/images/galeri/kuda01.jpg";
 import Kuda02 from "../assets/images/galeri/kuda02.jpg";
 import Kuda03 from "../assets/images/galeri/kuda03.jpg";
-// import Kuda04 from "../assets/images/galeri/kuda04.jpg";
+import Kuda04 from "../assets/images/galeri/kuda16.jpg";
 import Kuda05 from "../assets/images/galeri/kuda05.jpg";
 import Kuda06 from "../assets/images/galeri/kuda06.jpg";
 import Kuda07 from "../assets/images/galeri/kuda07.jpg";
@@ -64,7 +64,7 @@ import Kuda09 from "../assets/images/galeri/kuda09.jpg";
 import Kuda10 from "../assets/images/galeri/kuda10.jpg";
 import Kuda11 from "../assets/images/galeri/kuda11.jpg";
 import Kuda12 from "../assets/images/galeri/kuda12.jpg";
-// import kuda13 from "../assets/images/galeri/kuda13.jpg";
+import Kuda13 from "../assets/images/galeri/kuda19.jpg";
 import Kuda14 from "../assets/images/galeri/kuda14.jpg";
 import Kuda15 from "../assets/images/galeri/kuda15.jpg";
 import Kuda16 from "../assets/images/galeri/kuda16.jpg";
@@ -124,7 +124,6 @@ import Image21 from "../assets/images/galeri/image21.jpg";
 import Image22 from "../assets/images/galeri/image22.jpg";
 import Image23 from "../assets/images/galeri/image23.webp";
 
-
 // Objek photos dengan gambar yang sudah diimpor
 const photos = {
   utama: [
@@ -136,13 +135,13 @@ const photos = {
     Kuda00,
     Spot98,
     Spot00,
-    // kuda99,
+    Kuda99,
     Spot99,
     // ...tambahkan gambar lainnya sesuai kebutuhan
   ],
   jambu: [
     Jambu01,
-    // Jambu02,
+    Jambu02,
     Jambu03,
     Jambu04,
     Jambu05,
@@ -182,7 +181,7 @@ const photos = {
     Kuda01,
     Kuda02,
     Kuda03,
-    // Kuda04,
+    Kuda04,
     Kuda05,
     Kuda06,
     Kuda07,
@@ -191,7 +190,7 @@ const photos = {
     Kuda10,
     Kuda11,
     Kuda12,
-    // Kuda13,
+    Kuda13,
     Kuda14,
     Kuda15,
     Kuda16,
